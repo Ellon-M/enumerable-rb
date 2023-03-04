@@ -6,7 +6,7 @@ module MyEnumerable
 
   def filter(&block)
     res = []
-    each { |item| result << item if block.call(item) }
+    each { |item| res << item if block.call(item) }
     res
   end
 
